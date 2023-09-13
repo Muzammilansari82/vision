@@ -1,66 +1,122 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .bs-example {
+        margin: 0px;
+      }
+      .bg-dark {
+        background-color: transparent !important;
+      }
+      .navbar-brand {
+        font-size: 20px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
 
-  <style type="text/css">
-    .bs-example {
-      margin: 0px;
-
-    }
-    .bg-dark {
-    background-color: #4f55c7!important;
-}
-    .navbar-brand {
-      font-size: 20px;
-      font-family: sans-serif;
-
-    }
-  </style>
-</head>
-
-<body>
-
-
-
-  <div class="bs-example">
-    <nav class="navbar navbar-expand-md bg-danger navbar-danger fixed-top">
-      <a href="/" class="navbar-brand" style="color:yellow;">Vehicle Service Management</a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-        <div class="navbar-nav">
-          <a href="/" class="nav-item nav-link active">Home</a>
-
-          <a href="/customerclick" class="nav-item nav-link">Customer</a>
-          <a href="/mechanicsclick" class="nav-item nav-link">Mechanics</a>
-          <a href="/adminclick" class="nav-item nav-link">Admin</a>
-
-
+  <body>
+   
+    <div
+      class="header"
+      style="background-image: linear-gradient(to bottom, #1559b7, #4f7af3)"
+    >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+            <div class="full">
+              <div class="center-desk">
+                <div class="logo">
+                  <a href="/">
+                    <img src="{% static 'images/logo.png' %}" alt="#" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            <nav class="navigation navbar navbar-expand-md navbar-dark">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarsExample04"
+                aria-controls="navbarsExample04"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto" >
+                  <a href="/customerclick" class="nav-item nav-link"
+                    >Customer</a
+                  >
+                  <a href="/mechanicsclick" class="nav-item nav-link"
+                    >Mechanics</a
+                  >
+                  <a href="/aboutus" class="nav-item nav-link">About Us</a>
+                  <a href="contactus" class="nav-item nav-link">Contact Us</a>
+                  <a href="contactus" class="nav-item nav-link">Service</a>
+                  {% comment %}
+                  <a href="/adminclick" class="nav-item nav-link">Admin</a>
+                  {% endcomment %} {% comment %}
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'furnitures' %}"
+                      >Furnitures</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'testimonial' %}"
+                      >Testimonial</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="nav-item d_none">
+                    <a class="nav-link" href="#"
+                      ><i
+                        class="fa fa-user-circle padd_right"
+                        aria-hidden="true"
+                      ></i
+                      >Login/Register</a
+                    >
+                  </li>
+                  <li class="nav-item d_none">
+                    <a class="nav-link" href="#"
+                      ><i class="fa fa-search" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  {% endcomment %}
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-
-        <div class="navbar-nav">
-          <a href="/aboutus" class="nav-item nav-link">About Us</a>
-          <a href="contactus" class="nav-item nav-link">Contact Us</a>
-        </div>
-
-
-
-
       </div>
-    </nav>
-  </div>
-
-
-</body>
-
+    </div>
+  </body>
 </html>
