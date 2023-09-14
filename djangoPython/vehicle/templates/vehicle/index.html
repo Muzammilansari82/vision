@@ -9,6 +9,18 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      {% load static %}
+
+      <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'responsive.css' %}">
+      <link rel="stylesheet" href="{% static 'query.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      
   <style media="screen">
     .jumbotron {
       margin-top: 0px;
@@ -21,6 +33,17 @@
     .jumbotron h1 {
       text-align: center;
     }
+    .banner_main {
+        background: url('{% static 'images/banner.jpg' %}');
+        background-repeat: no-repeat;
+        min-height: 700px;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+   }
+   
   </style>
 
 </head>
@@ -32,86 +55,7 @@
   {% comment %} <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div> {% endcomment %}
-  <section class="banner_main">
-    <div id="banner1" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#banner1" data-slide-to="0" class="active"></li>
-            <li data-target="#banner1" data-slide-to="1"></li>
-            <li data-target="#banner1" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="text-bg">
-                                    <h1>Welcome</h1>
-                                    <span>car repair services</span>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
-                                    <a href="#">More Info </a> <a href="#">Contact Us</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text_img">
-                                    <figure><img src="{% static 'images/car.png' %}" alt="#"/></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="text-bg">
-                                    <h1>Welcome</h1>
-                                    <span>car repair services</span>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
-                                    <a href="#">More Info </a> <a href="#">Contact Us</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text_img">
-                                    <figure><img src="{% static 'images/car.png' %}" alt="#"/></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="text-bg">
-                                    <h1>Welcome</h1>
-                                    <span>car repair services</span>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
-                                    <a href="#">More Info </a> <a href="#">Contact Us</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text_img">
-                                    <figure><img src="{% static 'images/car.png' %}" alt="#"/></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        </a>
-        <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </a>
-    </div>
-</section>
+ \
 
 
   {% include "vehicle/customer_mechanic_cards.html" %}
@@ -139,7 +83,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="text_img">
-                                    <figure><img src="{% static 'images/car.png' %}" alt="#"/></figure>
+                                    <figure><img src="{% static 'images/img1.png' %}" alt="#"/></figure>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +104,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="text_img">
-                                    <figure><img src="{% static 'images/car.png' %}" alt="#"/></figure>
+                                    <figure><img src="{% static 'images/rolls.png' %}" alt="#"/></figure>
                                 </div>
                             </div>
                         </div>
@@ -197,6 +141,21 @@
         </a>
     </div>
 </section>
+
+<script src="{% static 'jquery.min.js' %}"></script>
+<script src="{% static 'popper.min.js' %}"></script>
+<script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'jquery-3.0.0.min.js' %}"></script>
+<!-- sidebar -->
+<script src="{% static 'jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'custom.js' %}"></script>
+<script src="{% static 'jquery.min.js' %}"></script>
+      <script src="{% static 'popper.min.js' %}"></script>
+      <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'jquery-3.0.0.min.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'custom.js' %}"></script>
 </body>
 
 </html>

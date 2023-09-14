@@ -1,0 +1,49 @@
+ {% comment %}
+    <div class="bs-example" style="background-color: transparent">
+      <nav class="navbar navbar-expand-md navbar-danger fixed-top">
+        <a href="/" class="navbar-brand" style="color: yellow"
+          >Vehicle Service Management</a
+        >
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav">
+            <a href="/" class="nav-item nav-link active">Home</a>
+
+            <a href="/customerclick" class="nav-item nav-link">Customer</a>
+            <a href="/mechanicsclick" class="nav-item nav-link">Mechanics</a>
+            <a href="/adminclick" class="nav-item nav-link">Admin</a>
+          </div>
+
+          <div class="navbar-nav">
+            <a href="/aboutus" class="nav-item nav-link">About Us</a>
+            <a href="contactus" class="nav-item nav-link">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    {% endcomment %}
+
+
+{% comment %} <marquee behavior="scroll" direction="left">
+   <img src="{% static "images/ferrari.png" %}" width="120" height="80" alt="ferrari" />
+    <img src="{% static "images/ford.png" %}" width="120" height="80" alt="ford" />
+   <img src="{% static "images/lambo.png" %}" width="120" height="80" alt="lambo" />
+   <img src="{% static "images/mahindra.png" %}" width="120" height="80" alt="mahindra" />
+   <img src="{% static "images/tvs.png" %}" width="120" height="80" alt="tvs" />
+   <img src="{% static "images/tata.png" %}" width="120" height="80" alt="tata" />
+   <img src="{% static "images/hero.png" %}" width="120" height="80" alt="hero" />
+   <img src="{% static "images/rolls.png" %}" width="120" height="80" alt="rolls" />
+   <img src="{% static "images/suzuki.png" %}" width="120" height="80" alt="suzuki" />
+ </marquee> {% endcomment %}
+  <br><br>
