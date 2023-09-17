@@ -7,11 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <style media="screen">
-    .jumbotron {
+    jumbotron {
       margin-top: 0px;
       margin-bottom: 0px;
+      background-image: linear-gradient(to top left, #626aaf,#ffffff00, #141629);
+      {% comment %} animation: pulsate 4s ease-in-out infinite;  {% endcomment %}
     }
-
+    
+    @keyframes pulsate {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
     .jumbotron h1 {
       text-align: center;
     }
@@ -23,7 +36,6 @@
 <body>
 
   {% include "vehicle/navbar.html" %}
-  <br><br>
   <div class="jumbotron" style="margin-bottom:0px;">
     <h1 class="display-4">Hello, Mechanics</h1>
     <p class="lead">Welcome to Vehicle Service Management</p>

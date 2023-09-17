@@ -4,12 +4,12 @@
 <head>
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  {% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.0/dist/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"> {% endcomment %}
       {% load static %}
 
       <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
@@ -18,6 +18,8 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="{% static 'responsive.css' %}">
       <link rel="stylesheet" href="{% static 'query.mCustomScrollbar.min.css' %}">
+      <link rel="stylesheet" href="{% static 'font/fontawesome.css' %}">
+
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -86,9 +88,9 @@
            </div>
            <div class="col-md-8">
               <ul class="location_icon">
-                 <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Locatins</li>
-                 <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a> +71 9087654321</li>
-                 <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
+                 <li class="ps-0 pr-0"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Locatins</li>
+                 <li class="ps-0 pr-0"><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a> +71 9087654321</li>
+                 <li class="ps-0 pr-0"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
               </ul>
            </div>
            <div class="col-md-6">
@@ -111,10 +113,10 @@
                     </div>
                     <div class="col-sm-col-xl-6 col-lg-6 col-md-6 col-sm-12">
                        <ul class="social_icon">
-                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                           <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                          {% comment %} <li><a href="#"><i class="fa fa-whatsapp-square" aria-hidden="true"></i></a></li> {% endcomment %}
                        </ul>
                     </div>
                  </div>
@@ -122,7 +124,7 @@
            </div>
            <div class="col-md-6">
               <div class="map">
-                 <figure><img src=" images/map.jpg' %}" alt="#"/></figure>
+                 <figure><img src="{% static 'images/map.jpg' %}" alt="#"/></figure>
               </div>
               <form class="bottom_form">
                  <h3>Newsletter</h3>
@@ -136,7 +138,7 @@
         <div class="container">
            <div class="row">
               <div class="col-md-12">
-                 <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free  html Templates</a></p>
+                 <p>Copyright 2022 All Right Reserved By  Vehicle Break Down Management system </p>
               </div>
            </div>
         </div>

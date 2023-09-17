@@ -13,9 +13,8 @@
 <body>
 
   {% include "vehicle/navbar.html" %}
-  <br><br>
 
-  <center>
+  {% comment %} <center>
     <h3 class='alert alert-success'>Send Us Your Valuable Feedback !</h3>
 
     <form method="POST">
@@ -40,7 +39,7 @@
    <img src="{% static "images/hero.png" %}" width="120" height="80" alt="hero" />
    <img src="{% static "images/rolls.png" %}" width="120" height="80" alt="rolls" />
    <img src="{% static "images/suzuki.png" %}" width="120" height="80" alt="suzuki" />
- </marquee>
+ </marquee> {% endcomment %}
   {% include "vehicle/footer.html" %}
 </body>
 

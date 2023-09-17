@@ -737,6 +737,8 @@ def edit_mechanic_profile_view(request):
 # for aboutus and contact
 def aboutus_view(request):
     return render(request,'vehicle/aboutus.html')
+def service(request):
+    return render(request,'vehicle/service.html')
 
 def passwordForget_view(request):
     return render(request,'vehicle/passwordForget.html')

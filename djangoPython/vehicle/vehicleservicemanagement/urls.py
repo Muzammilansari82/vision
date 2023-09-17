@@ -93,6 +93,7 @@ urlpatterns = [
     path('logout', LogoutView.as_view(template_name='vehicle/index.html'),name='logout'),
 
     path('aboutus', views.aboutus_view),
+    path('service', views.service),
     path('contactus', views.contactus_view),
     path('passwordForget', views.passwordForget_view),
 ]

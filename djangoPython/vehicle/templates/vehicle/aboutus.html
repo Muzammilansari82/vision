@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <style media="screen">
+    body {
+      user-select: none;
+  }
     .jumbotron {
       margin-top: 0px;
       margin-bottom: 0px;
@@ -19,6 +22,9 @@
     .alert {
       margin: 0px;
     }
+    p{
+      font-size:28px
+    }
   </style>
 
   <title></title>
@@ -27,30 +33,38 @@
 <body>
 
   {% include "vehicle/navbar.html" %}
-  <br><br>
-  <center>
-    <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3>
-  </center>
-  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
-    <h1 class="display-4">Hello Rider</h1>
-    <p class="lead">A genuine solution to vehicle problems</p>
+ 
+
+  
+  <div class="jumbotron container-fluid" style="margin-bottom: 0px;margin-top: 0px;">
+ <h1 class="display-4">Hello </h1> 
+ <h1 class="display-3">  About Us </h1>
+
+<p class="text-left pt-3 ps-5" style"font-size: 24px;">Welcome to Vehicle Breakdown MAnagement System, your trusted partner in vehicle breakdown solutions. We understand the frustration and inconvenience that comes with unexpected vehicle breakdowns, and that's why we've dedicated ourselves to providing you with swift, reliable, and innovative solutions to get you back on the road as quickly as possible.
+</p>
+<h2 class="display-5 ps-5">Who We Are</h2>
+
+<p class="text-left pt-3 ps-5" style"font-size: 24px;">At Vehicle Break Down Management System, we are a team of passionate individuals who are committed to making your life easier during those challenging moments when your vehicle lets you down. With years of experience in the automotive and technology sectors, we've come together to create a seamless and user-friendly vehicle breakdown system that you can always rely on.</p>
+
+<h2 class="display-5 ps-5">Our Mission</h2>
+
+<p class="text-left pt-3 ps-5" style"font-size: 24px;">Our mission is simple: to provide you with peace of mind when faced with a vehicle breakdown. We aim to redefine the way you experience breakdowns by offering efficient, technology-driven solutions that prioritize your safety, convenience, and satisfaction.</p>
+
+<h2 class="display-5 ps-5">Why Choose Us?</h2>
+
+<p class="text-left pt-3 ps-5" style"font-size: 24px;">Reliability: We pride ourselves on being a reliable partner in times of need. Our cutting-edge technology ensures that we are always there for you when your vehicle breaks down, no matter where you are.<br>Expertise: With a team of experienced professionals in the automotive and tech industries, we have the knowledge and skills needed to deliver top-notch breakdown solutions.<br>User-Focused: Your satisfaction is our priority. We have designed our services with your needs in mind, making them user-friendly and accessible to everyone.<br>Innovation: We are committed to staying at the forefront of technological advancements in the automotive industry, continuously improving our services to provide you with the best possible solutions.</p>
+
+<h2 class="display-5 ps-5">User's Data Privacy</h2>
+
+<p class="text-left pt-3 ps-5" style"font-size: 24px;">At Vehicle Breakdown MAnagement System, we take your privacy seriously. We understand that entrusting us with your data is a big responsibility, and we want to assure you that your information is in safe hands. Our approach to user data privacy includes:<br>Secure Data Handling: We employ industry-standard encryption and security measures to protect your personal information from unauthorized access or data breaches.<br>Transparency: We are committed to being transparent about how we collect, use, and store your data. Our privacy policy provides detailed information about our data practices.<br>Data Minimization: We only collect the data necessary to provide our breakdown services. We do not sell or share your data with third parties without your consent.<br>User Control: You have the right to control and manage your data. We provide easy-to-use tools that allow you to access, update, or delete your information at any time.<br>Compliance: We adhere to all relevant data protection laws and regulations to ensure that your privacy rights are respected.</p>
+    
+    
     <hr class="my-4">
-    <p>Explore our Website.</p>
     <p class="lead">
       <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
     </p>
   </div>
-  <marquee behavior="scroll" direction="left">
-   <img src="{% static "images/ferrari.png" %}" width="120" height="80" alt="ferrari" />
-    <img src="{% static "images/ford.png" %}" width="120" height="80" alt="ford" />
-   <img src="{% static "images/lambo.png" %}" width="120" height="80" alt="lambo" />
-   <img src="{% static "images/mahindra.png" %}" width="120" height="80" alt="mahindra" />
-   <img src="{% static "images/tvs.png" %}" width="120" height="80" alt="tvs" />
-   <img src="{% static "images/tata.png" %}" width="120" height="80" alt="tata" />
-   <img src="{% static "images/hero.png" %}" width="120" height="80" alt="hero" />
-   <img src="{% static "images/rolls.png" %}" width="120" height="80" alt="rolls" />
-   <img src="{% static "images/suzuki.png" %}" width="120" height="80" alt="suzuki" />
- </marquee>
+ 
   {% include "vehicle/footer.html" %}
 </body>
 

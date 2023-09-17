@@ -5,7 +5,7 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    .card {
+    {% comment %} .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       max-width: 300px;
       margin: auto;
@@ -49,15 +49,63 @@
 
     a {
       color: white;
-    }
+    } {% endcomment %}
+    .container.py-5 {
+      max-width: 1200px;
+   }
+   
+   .col-lg-6.px-0 .bg-secondary {
+      background-color: #343a40;
+      color: #fff;
+   }
+   
+   .col-lg-6.px-0 .bg-dark {
+      background-color: #343a40;
+      color: #fff;
+      
+   }
+   
+   .text-uppercase {
+      text-transform: uppercase;
+   }
+   
+   .btn-primary {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+   }
+   
+   .btn-primary:hover {
+      background-color: #0056b3;
+   }
+   .a2 {
+      background-image: url("{% static 'images/banner-left.webp'%}");
+      {% comment %} background-image: url("https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.webp?b=1&s=170667a&w=0&k=20&c=oDNgnbBqr6dQ01ZwhbLF5NA3gJRS2ISvrcnKpCSFirs="); {% endcomment %}
+      background-repeat: no-repeat;
+      background-size: cover;
+      cokor: wheat;
+   }
+   .a3 {
+      {% comment %} background-image: url("{% static 'images/banner-left.webp'%}"); {% endcomment %}
+      background-image: url("https://img.freepik.com/free-photo/man-talking-phone-car_273609-14194.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      cokor: wheat;
+   }
+   .hover:hover{
+      color: blue;
+      cursor:pointer;
+      background-color: white;
+   }
   </style>
+
 </head>
 
 <body>
 
 
 
-  <div class="grid-container">
+  {% comment %} <div class="grid-container">
     <div class="grid-item">
       <div class="card">
         <img src="{% static "images/admin.png" %}" alt="John" style="width:100%">
@@ -76,8 +124,34 @@
     </div>
 
 
+  </div> {% endcomment %}
+ <!-- Banner Start -->
+ <div class="container-fluid py-5">
+  <div class="container py-5">
+      <div class="row mx-0">
+          <div class="col-lg-6 px-0 ">
+              <div class="px-5 bg-secondary d-flex align-items-center justify-content-between a2 " style="height: 350px;">
+                  {% comment %} <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="{% static 'images/banner-left.jfif' %}" alt=""> {% endcomment %}
+                  <div class="text-right">
+                      <h1 class="text-uppercase mb-3 hover"style="font-weight: bold; font-size: 40px; color: wheat" >Want to be a Mechanic?</h1>
+                      <a class="btn btn-primary py-2 px-4" href="/customerclick">Start Now</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 px-0">
+              <div class="px-5 bg-dark d-flex align-items-center justify-content-between a3" style="height: 350px;">
+                  <div class="text-left">
+                      <h3 class="text-uppercase mb-3 hover"style="font-weight: bold; font-size: 40px; color: wheat" >Looking for a Mechanic?</h3>
+                      
+                      <a class="btn btn-primary py-2 px-4" href="/mechanicsclick">Start Now</a>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
   </div>
-
+</div>
+<!-- Banner End -->
 
 </body>
 

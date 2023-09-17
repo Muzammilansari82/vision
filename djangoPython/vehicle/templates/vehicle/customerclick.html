@@ -10,11 +10,27 @@
     .jumbotron {
       margin-top: 0px;
       margin-bottom: 0px;
+      background-image: linear-gradient(to top left, #626aaf,#ffffff00, #141629);
+      {% comment %} animation: pulsate 4s ease-in-out infinite;  {% endcomment %}
     }
+    
+    @keyframes pulsate {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
 
     .jumbotron h1 {
       text-align: center;
     }
+    
 
   </style>
 
@@ -23,10 +39,10 @@
 <body>
 
   {% include "vehicle/navbar.html" %}
-  <br><br>
-  <div class="jumbotron" style="margin-bottom:0px;">
-    <h1 class="display-4">Hello</h1>
-    <p class="lead">Welcome to Vehicle Service Management</p>
+
+  <div class="jumbotron a33" style="margin-bottom:0px;">
+    <h1 class="display-4">Hello Customers</h1>
+    <p class="lead fw-bold">Welcome to Vehicle Service Management</p>
     <hr class="my-4">
     <p>You can access various features after Login.</p>
     <p class="lead">
